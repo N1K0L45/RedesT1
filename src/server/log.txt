@@ -1,0 +1,10 @@
+DATETIME		EVENT		DESCRIPTION
+
+
+2019-05-15 19:18:42.076	connection	/127.0.0.1:51577 conexion entrante
+
+
+2019-05-15 19:18:49.302	command		/127.0.0.1:51577 put R.pdf
+
+
+2019-05-15 19:18:49.33	response	servidor envia respuesta a /127.0.0.1:51577

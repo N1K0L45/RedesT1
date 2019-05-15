@@ -9,9 +9,9 @@ public class client {
 		int portnum;
 		portnum = 1234; 	// portnumber del cliente
 		String opIn;
-		String regexGET = "(get\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)";	//Expresiones regulares para
-		String regexPUT = "(put\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)";	//los metodos get, put y delete
-		String regexDEL = "(delete\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)";
+		String regexGET = "(get\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";	//Expresiones regulares para
+		String regexPUT = "(put\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";	//los metodos get, put y delete
+		String regexDEL = "(delete\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";
 
 
 		System.out.println("Hola, tengo el puerto "+portnum);
