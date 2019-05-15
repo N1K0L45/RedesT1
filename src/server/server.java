@@ -8,9 +8,9 @@ public class server {
 
 	public static void main(String[] args) throws IOException{
 		int portnum;
-		String regexGET = "(get\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)"; //Expresiones regulares para los comandos
-		String regexPUT = "(put\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)";
-		String regexDEL = "(delete\\s)([A-Z|a-z|_|,|-]+)(\\.)([A-Z|a-z]+)";
+		String regexGET = "(get\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)"; //Expresiones regulares para los comandos
+		String regexPUT = "(put\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";
+		String regexDEL = "(delete\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";
 
 		File log = new File("log.txt");  //Archivo log.txt, donde se llevara registro de las acciones
 		String header = "DATETIME\t\tEVENT\t\tDESCRIPTION\n";
