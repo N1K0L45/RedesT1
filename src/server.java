@@ -179,7 +179,7 @@ public class server {
 				w.close();
 
 				String cwd = System.getProperty("user.dir");
-				String file2del = cwd+"\\"+nombre_archivo;
+				String file2del = cwd+"/"+nombre_archivo;
 				File f = new File(file2del);
 
 				PrintWriter writer = new PrintWriter(ss.getOutputStream(),true);
