@@ -1,0 +1,10 @@
+DATETIME		EVENT		DESCRIPTION
+
+
+2019-05-15 17:43:33.489	connection	/127.0.0.1:49841 conexion entrante
+
+
+2019-05-15 17:43:41.611	command		/127.0.0.1:49841 put log.txt
+
+
+2019-05-15 17:43:41.643	response	servidor envia respuesta a /127.0.0.1:49841
