@@ -14,11 +14,14 @@ public class client {
 		String regexDEL = "(delete\\s)([A-Z|a-z|_|,|-|0-9]+)(\\.)([A-Z|a-z|0-9]+)";
 
 
-		System.out.println("Hola, tengo el puerto "+portnum);
+		System.out.println("Corriendo en el puerto "+portnum);
+		System.out.println("Ingrese la IP del servidor: ");
+		Scanner serverip = new Scanner(System.in);
+		String sIP = serverip.nextLine();
 
 		Scanner in = new Scanner(System.in);			// Se crea el socket, y se configura la IP
 
-/*IPconfig*/Socket cs = new Socket("127.0.0.1",portnum);	// Como se uso el mismo PC para testear el codigo, tiene
+/*IPconfig*/Socket cs = new Socket(sIP,portnum);	// Como se uso el mismo PC para testear el codigo, tiene
 														// la IP del localhost
 		Scanner in1 = new Scanner(cs.getInputStream());
 
@@ -136,6 +139,7 @@ public class client {
 		cs.close();
 		in.close();
 		option.close();
+		serverip.close();
 	}
 
 }
