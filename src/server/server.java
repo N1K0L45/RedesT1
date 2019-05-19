@@ -39,7 +39,7 @@ class ThreadSocket extends Thread{
 			BufferedWriter hdr = new BufferedWriter(new FileWriter(log));
 			hdr.write(header);
 			hdr.close();
-			
+
 			Timestamp time = new Timestamp(System.currentTimeMillis());	// Se hace la entrada de conexion a log.txt
 			String socketIP = ss.getRemoteSocketAddress().toString();
 			String conex = "\n"+time+"\tconnection\t"+socketIP+" conexion entrante\n";
@@ -49,9 +49,9 @@ class ThreadSocket extends Thread{
 			w.close();
 
 
+			BufferedReader br = new BufferedReader(new InputStreamReader(ss.getInputStream()));
+			String opcion = br.readLine();
 			while(true) {
-				BufferedReader br = new BufferedReader(new InputStreamReader(ss.getInputStream()));
-				String opcion = br.readLine();
 
 				if(opcion.equals("ls")) {  //Comando ls
 					time = new Timestamp(System.currentTimeMillis());	//Se registra en log.txt
@@ -76,7 +76,8 @@ class ThreadSocket extends Thread{
 					w.write(logear);
 					w.close();
 
-					break;
+					opcion = "a";
+					//break;
 			}
 				else if(opcion.matches(regexGET)) {	//Comando GET
 					String[] xp = opcion.split("\\s");

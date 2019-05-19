@@ -1,10 +1,10 @@
 DATETIME		EVENT		DESCRIPTION
 
 
-2019-05-15 20:41:07.63	connection	/127.0.0.1:52125 conexion entrante
+2019-05-17 15:48:24.147	connection	/127.0.0.1:64971 conexion entrante
 
 
-2019-05-15 20:41:09.095	command		/127.0.0.1:52125 ls
+2019-05-17 15:49:25.261	command		/127.0.0.1:64971 ls
 
 
-2019-05-15 20:41:09.096	response	servidor envia respuesta a /127.0.0.1:52125
+2019-05-17 15:49:25.264	response	servidor envia respuesta a /127.0.0.1:64971
