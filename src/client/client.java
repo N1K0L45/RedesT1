@@ -21,8 +21,8 @@ public class client {
 
 		Scanner in = new Scanner(System.in);			// Se crea el socket, y se configura la IP
 
-/*IPconfig*/Socket cs = new Socket(sIP,portnum);	// Como se uso el mismo PC para testear el codigo, tiene
-														// la IP del localhost
+/*IPconfig*/Socket cs = new Socket(sIP,portnum);
+														
 		Scanner in1 = new Scanner(cs.getInputStream());
 
 		Scanner option = new Scanner(System.in);
