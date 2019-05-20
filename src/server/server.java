@@ -1,7 +1,6 @@
 import java.net.*;
 import java.sql.Timestamp;
 import java.io.*;
-import java.util.Scanner;
 
 public class server {
 
